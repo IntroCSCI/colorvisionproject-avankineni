@@ -4,6 +4,10 @@
 
 !!!My program is designed to simulate what a colorblind person might see when given an image. The program will take the image based on what type of colorblindness the user chooses and the image will be morphed to simulate that colorblindness.!!!
 
+# v0.2 Updates
+
+!!!The program in the first delivarble wasn't very effective as it just removed the color that colorblindness corresponded to which didn't accomplish the main task. This new version integrates a RGB formula for each of the colorblindness that simulates that colorblindness as accurately as possible using specific percentage values. The stakeholder largely influenced this change as the image must be accurately simulated to truly experience the program.!!!
+
 ## Developer
 
 !!!Ankit Vankineni!!!
@@ -49,3 +53,11 @@ Tritanopia!!!
 ### File Input and Output
 
 !!!File input and output is used in my program to take in the file the user inputs and validates it through a `if` statement to check if the file contains a valid image. The image file is then changed based on what the user inputs and then is saved at the end of the program.!!!
+
+### Arrays/Vectors
+
+!!!`Vectors` have been used very effectively in my program since they are used to run my entire program. The `vector` I use is a `2D vector` in which it stores rows and columns of pixels based on what values the image gives it. The `2D vector` is iterated through two `for loops` to fill the contents of the array with different RGB values and simulate the colorblind effect.
+
+### Functions
+
+!!!My program used four different `functions`, `file()`, `colorblindType()`, `isQuit()`, and `applyRGBFilters()`. Each `function` has a different purpose in the program. The first two functions are used to print and ask what the filename is and what colorblindness the user wants to simulate. Then it receives the information and stores it in their respective `variables`, `filename` and `colorblind`. `isQuit()` asks the user whether or not they want to make changes to their answer and then takes in their answer and returns true or false depending on their answer. This allows the `while loop` to run effectively. `applyRGBFilters()` includes the `for loops` to change the `2D vector` and also includes the formulas to simulate the colorblindness depending on what the user enters in `colorblindType()`. Both `colorblindType()` and `applyRGBFilters()` run until `isQuit()` returns false.
