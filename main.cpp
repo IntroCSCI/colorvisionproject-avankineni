@@ -11,6 +11,8 @@ bool isQuit();
 
 void applyRGBFilter(vector < vector <Pixel> > &, string);
 
+bool check(string);
+
 
 int main()
 {
@@ -33,6 +35,12 @@ int main()
   do {
 
     colorblind = colorblindType();
+
+    if(check(colorblind) == false)
+    {
+      cout << "\nError: Please enter one of the listed colorblind types.\n" << endl;
+      colorblind = colorblindType();
+    }
 
 // Initializing the 2D vector to the values that the image gives
 
@@ -75,6 +83,15 @@ bool isQuit()
     return true;
   }
     return false;
+}
+
+bool check(string correctType)
+{
+  while(!(correctType == "Protanopia") || !(correctType == "Deuteranomaly") || !(correctType == "Tritanopia"))
+  {
+    return false;
+  }
+  return true;
 }
 
 void applyRGBFilter(vector < vector <Pixel> > &bmp, string colorblind)

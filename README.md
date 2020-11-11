@@ -44,7 +44,7 @@ Tritanopia!!!
 
 ### Decisions
 
-!!!The first decision used in my program is used to check if the file that the user input has the required image format based on what is coded inside the function `isImage()`. My next conditions are used to change RGB values based on what the user input for the variable called `colorblind` !!!
+!!!The first decision used in my program is used to check if the file that the user input has the required image format based on what is coded inside the function `isImage()`. My next conditions are used to change RGB values based on what the user input for the variable called `colorblind` and make sure the user entered a correct colorblind type using the `check()` `function`. !!!
 
 ### Iteration
 
@@ -56,8 +56,8 @@ Tritanopia!!!
 
 ### Arrays/Vectors
 
-!!!`Vectors` have been used very effectively in my program since they are used to run my entire program. The `vector` I use is a `2D vector` in which it stores rows and columns of pixels based on what values the image gives it. The `2D vector` is iterated through two `for loops` to fill the contents of the array with different RGB values and simulate the colorblind effect.
+!!!`Vectors` have been used very effectively in my program since they are used to run my entire program. The `vector` I use is a `2D vector` in which it stores rows and columns of pixels based on what values the image gives it. The `2D vector` is iterated through two `for loops` to fill the contents of the array with different RGB values and simulate the colorblind effect.!!!
 
 ### Functions
 
-!!!My program used four different `functions`, `file()`, `colorblindType()`, `isQuit()`, and `applyRGBFilters()`. Each `function` has a different purpose in the program. The first two functions are used to print and ask what the filename is and what colorblindness the user wants to simulate. Then it receives the information and stores it in their respective `variables`, `filename` and `colorblind`. `isQuit()` asks the user whether or not they want to make changes to their answer and then takes in their answer and returns true or false depending on their answer. This allows the `while loop` to run effectively. `applyRGBFilters()` includes the `for loops` to change the `2D vector` and also includes the formulas to simulate the colorblindness depending on what the user enters in `colorblindType()`. Both `colorblindType()` and `applyRGBFilters()` run until `isQuit()` returns false.
+!!!My program used four different `functions`, `file()`, `colorblindType()`, `isQuit()`, `applyRGBFilters()`, and `check()`. Each `function` has a different purpose in the program. The first two functions are used to print and ask what the filename is and what colorblindness the user wants to simulate. Then it receives the information and stores it in their respective `variables`, `filename` and `colorblind`. `isQuit()` asks the user whether or not they want to make changes to their answer and then takes in their answer and returns true or false depending on their answer. This allows the `while loop` to run effectively. `applyRGBFilters()` includes the `for loops` to change the `2D vector` and also includes the formulas to simulate the colorblindness depending on what the user enters in `colorblindType()`. Both `colorblindType()` and `applyRGBFilters()` run until `isQuit()` returns false. `check()` makes sure the user has entered one of the three inputs listed using the function `colorblindType()` and variable `colorblind` by giving an error everytime they don't.!!!
