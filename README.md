@@ -44,11 +44,11 @@ Tritanopia!!!
 
 ### Decisions
 
-!!!The first decision used in my program is used to check if the file that the user input has the required image format based on what is coded inside the function `isImage()`. My next conditions are used to change RGB values based on what the user input for the variable called `colorblind` and make sure the user entered a correct colorblind type using the `check()` `function`. !!!
+!!!The first decision used in my program is used to check if the file that the user input has the required image format based on what is coded inside the function `isImage()`. My next conditions are used to change RGB values based on what the user input for the variable called `colorblind`.!!!
 
 ### Iteration
 
-!!!My progam uses two `for loops` to fill the contents of a 2D `array`. The first for loop gets the row of the `array` and the second for loop gets the columns. Together, every single pixel is able to be changed.!!!
+!!!My progam uses two `for loops` to fill the contents of a 2D `array`. The first for loop gets the row of the `array` and the second for loop gets the columns. Together, every single pixel is able to be changed. The `while loop` in main uses the `check()` method to make sure the user entered one of the colorblind types listed and prints an error if they don't!!!
 
 ### File Input and Output
 
