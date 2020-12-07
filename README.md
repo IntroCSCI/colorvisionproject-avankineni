@@ -17,8 +17,7 @@
 To run the program, give the following commands:
 
 ```
-g++ --std=c++11 main.cpp -o cvp
-./cvp
+"g++ -std=c++11 *.cpp -o cvp; ./cvp"
 ```
 
 Here is an example of the program running:
@@ -61,3 +60,7 @@ Tritanopia!!!
 ### Functions
 
 !!!My program used four different `functions`, `file()`, `colorblindType()`, `isQuit()`, `applyRGBFilters()`, and `check()`. Each `function` has a different purpose in the program. The first two functions are used to print and ask what the filename is and what colorblindness the user wants to simulate. Then it receives the information and stores it in their respective `variables`, `filename` and `colorblind`. `isQuit()` asks the user whether or not they want to make changes to their answer and then takes in their answer and returns true or false depending on their answer. This allows the `while loop` to run effectively. `applyRGBFilters()` includes the `for loops` to change the `2D vector` and also includes the formulas to simulate the colorblindness depending on what the user enters in `colorblindType()`. Both `colorblindType()` and `applyRGBFilters()` run until `isQuit()` returns false. `check()` makes sure the user has entered one of the three inputs listed using the function `colorblindType()` and variable `colorblind` by giving an error everytime they don't.!!!
+
+### Classes
+
+!!!`Classes` have been used in my program to create a user interface to offer a more personalized simulation rather than it being generalized. The `class` "`user`" contains the name, age, and the rating they gave of the simulation to culminate a personalized experience. Each variable has a `set` function and a `get` function to properly asign values and retrieve them for printing when desired. `Name` is contained as a `string`, `age` is contained as a `int`, and `rating` is contained as a `double` to give more accurate results.!!!

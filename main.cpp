@@ -1,4 +1,5 @@
 #include <iostream>
+#include "user.h"
 #include "libraries/bitmap.h"
 using namespace std;
 #include <cmath>
@@ -13,6 +14,8 @@ void applyRGBFilter(vector < vector <Pixel> > &, string);
 
 bool check(string);
 
+user person;
+
 
 int main()
 {
@@ -20,6 +23,16 @@ int main()
   string fileName;
   vector < vector <Pixel> > bmp;
   string colorblind;
+  string nameInput;
+  int ageInput;
+  double ratingInput;
+
+  cout << "What is your name?" << endl;
+  cin >> nameInput;
+  person.setName(nameInput);
+  cout << "How old are you?" << endl;
+  cin >> ageInput;
+  person.setAge(ageInput);
 
   fileName = file();
 
@@ -54,6 +67,11 @@ int main()
 
     image.save(fileName);
   }
+  cout << "What would you rate the simulation 1.0 to 10.0?" << endl;
+  cin >> ratingInput;
+  person.setRating(ratingInput);
+  cout << person.getName() << " is " << person.getAge() << " years old and rates the simulation " << person.getRating() << " out of 10!" << endl;
+
   return 0;
 }
 
@@ -69,7 +87,7 @@ string file()
 string colorblindType() 
 {
   string colorblind;
-  cout << "What type of colorblind do you want to simulate?: \nProtanopia \nDeuteranomaly \nTritanopia" << endl;
+  cout << "What type of colorblind do you want to simulate " << person.getName() <<"?: \nProtanopia \nDeuteranomaly \nTritanopia" << endl;
   cin >> colorblind;
   return colorblind;
 }
